@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           {/* Text Content */}
           <div className="text-center md:text-left">
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight">
+            <h2 className="text-4xl sm:text-4xl lg:text-6xl font-extrabold leading-tight mb-6 tracking-tight">
               {t("heroTitleStart")}{" "}
               <span className="bg-gradient-to-r from-[#4FA9DA] to-blue-500 bg-clip-text text-transparent drop-shadow-[0_1px_4px_rgba(79,169,218,0.4)]">
                 {t("heroTitleHighlight")}
