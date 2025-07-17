@@ -1,0 +1,127 @@
+{
+  "features": "Features",
+  "howItWorks": "How it Works",
+  "reviews": "Reviews",
+  "contact": "Contact",
+  "login": "Login",
+  "getStarted": "Get Started",
+   "heroTitleStart": "Bridging Citizens and",
+  "heroTitleHighlight": "Government",
+  "heroSubtitle": "Dcharcha is a digital engagement platform that enhances public participation in policymaking, enabling transparent and inclusive dialogues between citizens and government bodies.",
+  "buttonGetApp": "Get it on Play Store",
+  "buttonLearnMore": "Learn More",
+  "policyLiveLabel": "Live Policy Discussion",
+  "policyTitle": "Education Reform Initiative",
+  "policyDescription": "Join the ongoing discussion about modernizing our education system...",
+  "policyStatus": "Active Now",
+  "participants": "participants",
+  "empowerment": {
+    "headingStart": "Empowering",
+    "headingHighlight": "Democratic Participation",
+    "subheading": "Tools and spaces that foster open dialogue, informed decisions, and collective action between society and governance.",
+    "openDiscussionsTitle": "Open Discussions",
+    "openDiscussionsDesc": "Engage in transparent, moderated forums on pressing policy topics with active citizen voices.",
+    "transparencyTitle": "Transparency",
+    "transparencyDesc": "Stay informed with live updates on government actions and public response metrics.",
+    "inclusiveEngagementTitle": "Inclusive Engagement",
+    "inclusiveEngagementDesc": "Bridge the gap between citizens, NGOs, and government bodies through unified dialogue."
+  },
+  "howItWorks.title": "How Dcharcha Works",
+  "howItWorks.step1.title": "Join Discussions",
+  "howItWorks.step1.description": "Register and participate in ongoing policy discussions relevant to your interests and community.",
+  "howItWorks.step2.title": "Share Your Voice",
+  "howItWorks.step2.description": "Contribute your perspectives, experiences, and suggestions on various governance and policy matters.",
+  "howItWorks.step3.title": "Track Impact",
+  "howItWorks.step3.description": "Monitor how your input influences policy decisions and see real-time government responses.",
+  "howItWorks.recentActivity": "Recent Activity",
+  "howItWorks.live": "Live",
+  "howItWorks.activity1": "Roshan commented on Healthcare Policy",
+  "howItWorks.activity2": "Ministry updated Economic Reform status",
+  "howItWorks.activity3": "Climate Action Group started new discussion",
+  "howItWorks.time1": "2 minutes ago",
+  "howItWorks.time2": "15 minutes ago",
+  "howItWorks.time3": "1 hour ago",
+  "takeDemocracy.title": "Take Democracy in Your Pocket",
+  "takeDemocracy.description": "Download the Dcharcha app today and stay connected with policy discussions that matter to you. Participate in democracy anytime, anywhere.",
+  "takeDemocracy.appStore": "App Store",
+  "takeDemocracy.googlePlay": "Google Play",
+  "takeDemocracy.ratingText": "4.8 (2.5k+ reviews)",
+  "takeDemocracy.discussionBadge": "Join live discussions",
+  "takeDemocracy.updateBadge": "Get policy updates",
+  "testimonials": {
+    "title": "What Our Users Say",
+    "subtitle": "Real feedback from citizens making a difference",
+
+    "anjali_name": "Anjali Sharma",
+    "anjali_role": "Civil Rights Activist",
+    "anjali_quote": "Dcharcha has revolutionized how I engage with policy makers. The platform makes it easy to voice concerns and see real impact.",
+
+    "rajesh_name": "Rajesh Kumar",
+    "rajesh_role": "Small Business Owner",
+    "rajesh_quote": "Finally, a platform where my voice matters. The discussions are meaningful and I can see how my input influences policy decisions.",
+
+    "priya_name": "Priya Patel",
+    "priya_role": "University Student",
+    "priya_quote": "As a young citizen, Dcharcha gives me the tools to participate in democracy in a way that fits my digital-first lifestyle."
+  },
+  "contactSection": {
+    "title": "Contact Us",
+    "subtitle": "Have questions or feedback? Reach out and we’ll respond promptly.",
+    "alert": "Message sent!",
+
+    "location": {
+      "title": "Our Location",
+      "text": "9/7, Bharat Nivas, Lakshmi Avenue, School Rd., Chennai-99"
+    },
+    "phone": {
+      "title": "Phone Number",
+      "text": "+49 176 66456789"
+    },
+    "email": {
+      "title": "Email Address",
+      "text": "naga.majji@gmail.com"
+    },
+    "hours": {
+      "title": "Working Hours",
+      "text": "Monday to Friday: 9:00 AM - 5:00 PM"
+    },
+
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+
+      "name_placeholder": "Your Name",
+      "email_placeholder": "Your Email",
+      "subject_placeholder": "Subject",
+      "message_placeholder": "Your Message"
+    }
+  },
+  "footer": {
+    "description": "Empowering democratic participation through transparent and inclusive digital engagement.",
+    "platform": {
+      "title": "Platform",
+      "features": "Features",
+      "howItWorks": "How it Works",
+      "security": "Security",
+      "privacy": "Privacy"
+    },
+    "resources": {
+      "title": "Resources",
+      "docs": "Documentation",
+      "help": "Help Center",
+      "community": "Community",
+      "blog": "Blog"
+    },
+    "contact": {
+      "title": "Contact",
+      "support": "Support",
+      "partnership": "Partnership",
+      "press": "Press",
+      "careers": "Careers"
+    },
+    "copyright": "Dcharcha. All rights reserved."
+  }
+}
