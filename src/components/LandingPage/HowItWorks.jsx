@@ -63,10 +63,14 @@ const HowItWorksSection = () => {
 
             <div className="space-y-8">
               {steps.map((step) => (
-                <div key={step.step} className="flex items-start space-x-5 text-left mx-auto max-w-xl">
-                  <div className="w-12 h-12 rounded-full bg-[#4FA9DA] text-gray-900 font-semibold text-lg flex items-center justify-center shadow-md border border-[#4FA9DA]/40">
+                <div
+                  key={step.step}
+                  className="flex items-start space-x-5 text-left mx-auto max-w-xl"
+                >
+                  <div className="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-full bg-[#4FA9DA] text-gray-900 font-bold text-lg shadow-md border border-[#4FA9DA]/40">
                     {step.step}
                   </div>
+
                   <div>
                     <h3 className="text-xl font-semibold">{step.title}</h3>
                     <p className="text-gray-400 mt-1">{step.description}</p>
@@ -80,7 +84,9 @@ const HowItWorksSection = () => {
           <div className="hidden lg:block">
             <div className="bg-[#111827] border border-gray-700 rounded-2xl shadow-lg p-6 sm:p-8 mt-4">
               <div className="flex items-center justify-between mb-6">
-                <h3 className="text-lg font-semibold">{t("howItWorks.recentActivity")}</h3>
+                <h3 className="text-lg font-semibold">
+                  {t("howItWorks.recentActivity")}
+                </h3>
                 <span className="text-sm text-gray-400 flex items-center">
                   <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-ping"></span>
                   {t("howItWorks.live")}
