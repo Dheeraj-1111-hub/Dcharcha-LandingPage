@@ -16,6 +16,11 @@ const FloatingNavbar = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    if (navigator.vibrate) navigator.vibrate(30);
+  };
+
+  const handleClick = () => {
+    if (navigator.vibrate) navigator.vibrate(40);
   };
 
   return (
@@ -47,18 +52,24 @@ const FloatingNavbar = () => {
 
           {/* Desktop Buttons + Language Selector */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="text-gray-300 hover:text-[#4FA9DA] font-medium transition-all hover:scale-105 duration-200">
+            <button
+              onClick={handleClick}
+              className="text-gray-300 hover:text-[#4FA9DA] font-medium transition-all duration-200 hover:scale-105 active:scale-95"
+            >
               {t("login")}
             </button>
-            <button className="bg-[#4FA9DA] text-white px-6 py-2 rounded-full font-semibold shadow-md hover:brightness-110 hover:scale-105 transition duration-300">
+            <button
+              onClick={handleClick}
+              className="bg-[#4FA9DA] text-white px-6 py-2 rounded-full font-semibold shadow-md hover:brightness-110 hover:scale-105 active:scale-95 transition duration-300"
+            >
               {t("getStarted")}
             </button>
 
-            {/* Desktop Language Selector */}
+            {/* Language Selector */}
             <div className="relative">
               <select
                 onChange={(e) => changeLanguage(e.target.value)}
-                className="appearance-none text-gray-300 bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 pr-10 focus:outline-none focus:border-[#4FA9DA] transition duration-200 shadow-sm hover:border-[#4FA9DA]"
+                className="appearance-none text-gray-300 bg-gray-800 border border-gray-600 rounded-lg px-4 py-2 pr-10 focus:outline-none focus:border-[#4FA9DA] transition duration-200 shadow-sm hover:border-[#4FA9DA] active:scale-95"
               >
                 <option value="en">English</option>
                 <option value="hi">हिन्दी</option>
@@ -72,8 +83,11 @@ const FloatingNavbar = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden text-3xl text-gray-300"
-            onClick={() => setMobileMenuOpen((prev) => !prev)}
+            className="md:hidden text-3xl text-gray-300 active:scale-90 transition-transform duration-200"
+            onClick={() => {
+              setMobileMenuOpen((prev) => !prev);
+              handleClick();
+            }}
           >
             {mobileMenuOpen ? <MdClose /> : <MdMenu />}
           </button>
@@ -87,14 +101,15 @@ const FloatingNavbar = () => {
                 <a
                   key={link.labelKey}
                   href={link.href}
-                  className="block text-gray-300 hover:text-[#4FA9DA] transition-all duration-200 font-medium"
+                  className="block text-gray-300 hover:text-[#4FA9DA] transition-all duration-200 font-medium active:scale-95"
+                  onClick={handleClick}
                 >
                   {t(link.labelKey)}
                 </a>
               ))}
             </div>
 
-            {/* Mobile Language Selector */}
+            {/* Language Selector */}
             <div className="relative w-full">
               <label htmlFor="language-select" className="text-sm text-gray-400 mb-1 block">
                 {t("language") || "Language"}
@@ -102,7 +117,7 @@ const FloatingNavbar = () => {
               <select
                 id="language-select"
                 onChange={(e) => changeLanguage(e.target.value)}
-                className="w-full appearance-none bg-gray-800 text-white border border-gray-600 rounded-md px-4 py-3 pr-10 focus:outline-none focus:ring-2 focus:ring-[#4FA9DA] transition duration-200"
+                className="w-full appearance-none bg-gray-800 text-white border border-gray-600 rounded-md px-4 py-3 pr-10 focus:outline-none focus:ring-2 focus:ring-[#4FA9DA] transition duration-200 active:scale-95"
               >
                 <option value="en">English</option>
                 <option value="hi">हिन्दी</option>
@@ -114,10 +129,16 @@ const FloatingNavbar = () => {
             </div>
 
             <div className="space-y-3 pt-2">
-              <button className="w-full border border-[#4FA9DA] text-[#4FA9DA] hover:bg-[#4FA9DA] hover:text-white px-5 py-2 rounded-full font-medium shadow-sm transition-all duration-300">
+              <button
+                onClick={handleClick}
+                className="w-full border border-[#4FA9DA] text-[#4FA9DA] hover:bg-[#4FA9DA] hover:text-white px-5 py-2 rounded-full font-medium shadow-sm transition-all duration-300 active:scale-95"
+              >
                 {t("login")}
               </button>
-              <button className="w-full bg-[#4FA9DA] text-white px-5 py-2 rounded-full font-semibold shadow-md hover:brightness-110 transition-all duration-300">
+              <button
+                onClick={handleClick}
+                className="w-full bg-[#4FA9DA] text-white px-5 py-2 rounded-full font-semibold shadow-md hover:brightness-110 transition-all duration-300 active:scale-95"
+              >
                 {t("getStarted")}
               </button>
             </div>

@@ -31,12 +31,14 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 sm:gap-6">
-              <button className="bg-[#4FA9DA] hover:bg-[#3a96c9] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 hover:cursor-pointer shadow-md hover:shadow-[#4FA9DA]/40">
+              {/* Get App Button */}
+              <button className="bg-[#4FA9DA] hover:bg-[#3a96c9] text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-semibold flex items-center justify-center gap-2 transition-all duration-200 active:scale-95 shadow-md hover:shadow-[#4FA9DA]/40">
                 <FaGooglePlay className="text-xl sm:text-2xl" />
                 {t("buttonGetApp")}
               </button>
 
-              <button className="border border-gray-500 text-gray-300 hover:text-[#4FA9DA] hover:border-[#4FA9DA] px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 hover:scale-105 hover:cursor-pointer">
+              {/* Learn More Button */}
+              <button className="border border-gray-500 text-gray-300 hover:text-[#4FA9DA] hover:border-[#4FA9DA] px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-200 active:scale-95">
                 {t("buttonLearnMore")}
               </button>
             </div>
