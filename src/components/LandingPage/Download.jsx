@@ -7,6 +7,10 @@ import dcharchaLogo from "../../assets/Dcharcha_Logo-03.png";
 const TakeDemocracySection = () => {
   const { t } = useTranslation();
 
+  const handleClick = () => {
+    if (navigator.vibrate) navigator.vibrate(40);
+  };
+
   return (
     <main className="w-full bg-gradient-to-br from-gray-950 to-gray-950 text-white sm:pt-1">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-20">
@@ -27,14 +31,16 @@ const TakeDemocracySection = () => {
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-6">
               <a
                 href="#"
-                className="flex items-center justify-center bg-[#4FA9DA] hover:bg-[#3a96c9] text-white px-6 py-3 rounded-full text-base font-semibold gap-2 transition-all duration-300 hover:scale-105 shadow-md"
+                onClick={handleClick}
+                className="flex items-center justify-center bg-[#4FA9DA] hover:bg-[#3a96c9] text-white px-6 py-3 rounded-full text-base font-semibold gap-2 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md"
               >
                 <FaApple className="text-xl" />
                 {t("takeDemocracy.appStore")}
               </a>
               <a
                 href="#"
-                className="flex items-center justify-center bg-[#4FA9DA] hover:bg-[#3a96c9] text-white px-6 py-3 rounded-full text-base font-semibold gap-2 transition-all duration-300 hover:scale-105 shadow-md"
+                onClick={handleClick}
+                className="flex items-center justify-center bg-[#4FA9DA] hover:bg-[#3a96c9] text-white px-6 py-3 rounded-full text-base font-semibold gap-2 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md"
               >
                 <FaGooglePlay className="text-xl" />
                 {t("takeDemocracy.googlePlay")}
@@ -87,14 +93,17 @@ const TakeDemocracySection = () => {
               </div>
 
               {/* Download Button */}
-              <div className="absolute -bottom-6 -right-6 sm:-bottom-5 sm:-right-5 bg-white p-2 rounded-full shadow-md">
-                <div className="bg-[#4FA9DA] w-12 h-12 rounded-full flex items-center justify-center text-white hover:rotate-12 transition-transform">
+              <div className="absolute -bottom-6 -right-6 sm:-bottom-5 sm:-right-5 bg-white p-2 rounded-full shadow-md active:scale-90 transition-transform duration-200">
+                <div
+                  onClick={handleClick}
+                  className="bg-[#4FA9DA] w-12 h-12 rounded-full flex items-center justify-center text-white hover:rotate-12 transition-transform active:scale-90"
+                >
                   <MdDownload className="text-2xl" />
                 </div>
               </div>
 
               {/* Floating Cards */}
-              <div className="absolute top-1/4 -left-6 sm:-left-10 bg-white px-2 py-1.5 sm:px-3 sm:py-2 rounded-xl shadow-md rotate-3 hover:rotate-0 transition-transform duration-300 max-w-[12rem]">
+              <div className="absolute top-1/4 -left-6 sm:-left-10 bg-white px-2 py-1.5 sm:px-3 sm:py-2 rounded-xl shadow-md rotate-3 hover:rotate-0 transition-transform duration-300 max-w-[12rem] active:scale-95">
                 <div className="flex items-center space-x-1 sm:space-x-2">
                   <MdForum className="text-[#4FA9DA] text-sm sm:text-base" />
                   <span className="text-xs sm:text-sm font-medium text-gray-900">
@@ -103,7 +112,7 @@ const TakeDemocracySection = () => {
                 </div>
               </div>
 
-              <div className="absolute bottom-1/4 -right-5 sm:-right-6 bg-white px-2 py-1.5 sm:px-3 sm:py-2 rounded-xl shadow-md -rotate-2 hover:rotate-0 transition-transform duration-300 max-w-[12rem]">
+              <div className="absolute bottom-1/4 -right-5 sm:-right-6 bg-white px-2 py-1.5 sm:px-3 sm:py-2 rounded-xl shadow-md -rotate-2 hover:rotate-0 transition-transform duration-300 max-w-[12rem] active:scale-95">
                 <div className="flex items-center space-x-1 sm:space-x-2">
                   <MdNotificationsActive className="text-green-500 text-sm sm:text-base" />
                   <span className="text-xs sm:text-sm font-medium text-gray-900">
