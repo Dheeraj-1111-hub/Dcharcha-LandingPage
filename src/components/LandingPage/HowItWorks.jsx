@@ -47,13 +47,13 @@ const HowItWorksSection = () => {
   return (
     <section
       id="how-it-works"
-      className="w-full bg-gradient-to-br from-gray-950 to-gray-950 text-white py-24 sm:py-32 border-t border-gray-800"
+      className="w-full bg-gradient-to-br from-gray-950 to-gray-950 text-white py-20 sm:py-28 border-t border-gray-800"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left: Steps */}
-          <div>
-            <h2 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-12 tracking-tight">
+          <div className="text-center lg:text-left">
+            <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-10 tracking-tight">
               {t("howItWorks.title").split("Dcharcha")[0]}
               <span className="bg-gradient-to-r from-[#4FA9DA] to-blue-500 bg-clip-text text-transparent">
                 Dcharcha
@@ -63,8 +63,8 @@ const HowItWorksSection = () => {
 
             <div className="space-y-8">
               {steps.map((step) => (
-                <div key={step.step} className="flex items-start space-x-5">
-                  <div className="w-12 aspect-square rounded-full bg-[#4FA9DA] text-gray-900 font-semibold text-lg flex items-center justify-center shadow-md border border-[#4FA9DA]/40">
+                <div key={step.step} className="flex items-start space-x-5 text-left mx-auto max-w-xl">
+                  <div className="w-12 h-12 rounded-full bg-[#4FA9DA] text-gray-900 font-semibold text-lg flex items-center justify-center shadow-md border border-[#4FA9DA]/40">
                     {step.step}
                   </div>
                   <div>
@@ -76,9 +76,9 @@ const HowItWorksSection = () => {
             </div>
           </div>
 
-          {/* Right: Activity Feed */}
-          <div>
-            <div className="bg-[#111827] border border-gray-700 rounded-2xl shadow-lg p-6 sm:p-8 mt-8">
+          {/* Right: Activity Feed (hidden on small screens) */}
+          <div className="hidden lg:block">
+            <div className="bg-[#111827] border border-gray-700 rounded-2xl shadow-lg p-6 sm:p-8 mt-4">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="text-lg font-semibold">{t("howItWorks.recentActivity")}</h3>
                 <span className="text-sm text-gray-400 flex items-center">
