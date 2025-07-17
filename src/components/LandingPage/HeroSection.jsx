@@ -38,9 +38,14 @@ const HeroSection = () => {
               </button>
 
               {/* Learn More Button */}
-              <button className="border border-gray-500 text-gray-300 hover:text-[#4FA9DA] hover:border-[#4FA9DA] px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-200 active:scale-95">
+              <a
+                href="#features"
+                className="border border-gray-500 text-gray-300 hover:text-[#4FA9DA] hover:border-[#4FA9DA] 
+             px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg font-semibold 
+             transition-all duration-200 active:scale-95 text-center"
+              >
                 {t("buttonLearnMore")}
-              </button>
+              </a>
             </div>
           </div>
 

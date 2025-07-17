@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import {
-  MdLocationOn,
-  MdCall,
-  MdEmail,
-  MdSchedule,
-} from "react-icons/md";
+import { MdLocationOn, MdCall, MdEmail, MdSchedule } from "react-icons/md";
 
 const ContactSection = () => {
   const { t } = useTranslation();
@@ -82,7 +77,9 @@ const ContactSection = () => {
                   {item.icon}
                 </div>
                 <div>
-                  <h4 className="text-base sm:text-lg font-semibold mb-1">{item.title}</h4>
+                  <h4 className="text-base sm:text-lg font-semibold mb-1">
+                    {item.title}
+                  </h4>
                   <p className="text-sm text-gray-300">{item.text}</p>
                 </div>
               </div>
@@ -95,7 +92,10 @@ const ContactSection = () => {
               {/* Name + Email */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm text-gray-300 mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm text-gray-300 mb-2"
+                  >
                     {t("contactSection.form.name")}
                   </label>
                   <input
@@ -109,7 +109,10 @@ const ContactSection = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm text-gray-300 mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm text-gray-300 mb-2"
+                  >
                     {t("contactSection.form.email")}
                   </label>
                   <input
@@ -126,7 +129,10 @@ const ContactSection = () => {
 
               {/* Subject */}
               <div>
-                <label htmlFor="subject" className="block text-sm text-gray-300 mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm text-gray-300 mb-2"
+                >
                   {t("contactSection.form.subject")}
                 </label>
                 <input
@@ -142,7 +148,10 @@ const ContactSection = () => {
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-sm text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm text-gray-300 mb-2"
+                >
                   {t("contactSection.form.message")}
                 </label>
                 <textarea
@@ -158,7 +167,13 @@ const ContactSection = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-[#4FA9DA] to-blue-500 hover:from-[#3a96c9] hover:to-[#318cc1] text-white font-semibold py-3 sm:py-4 rounded-full shadow-lg hover:shadow-blue-500/30 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
+                className="w-full bg-gradient-to-r from-[#4FA9DA] to-blue-500 
+             hover:from-[#3a96c9] hover:to-[#318cc1] 
+             text-white font-semibold py-3 sm:py-4 
+             rounded-full shadow-lg hover:shadow-blue-500/30 
+             transition-all duration-300 transform 
+             hover:scale-105 active:scale-95 
+             text-sm sm:text-base"
               >
                 {t("contactSection.form.submit")}
               </button>
